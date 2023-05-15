@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Poppins:wght@300;500&display=swap');
+button, label, canvas, div {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", monospace;
+  font-size: 14px;
+  background-color:#673AB7;
+}
+
+h1 {
+  font-size: 16px;
+}
+
+h6 {
+  margin: 1em 0 1em 0;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+a {
+  text-align:center;
+}
+#input-file {
+  position: absolute;
+  left: -10000px;
+}
+
+#preview {
+  border: 1px solid #eee;
+  margin: 10px 0;
+  background: #eee;
+  width: 100%;
+}
+
+.frame-option {
+  padding: 10px;
+  line-height: 0;
+  width: 25%;
+  background: transparent;
+  border: 0;
+}
+
+.frame-option:focus {
+  border: 2px solid #673AB7;
+  outline: none;
+  position: relative;
+  padding: 9px;
+  border-radius: 10px;
+}
+
+.frame-option img {
+  border-radius: 5px;
+  background-image: url(./placeholder.png);
+  background-size: 100% 100%;
+  pointer-events: none;
+}
+
+.frame-option:not(:first-child) {
+  margin-left: -1px;
+}
+
+.wrapper {
+  width: 100%;
+  padding: 2em 2em 4em 2em;
+  max-width: 360px;
+  min-width: 240px;
+  margin: 0 auto;
+  background-color:#FFFFFF;
+  border-radius: 10px;
+}
+
+.action {
+  font-size: 14px;
+  text-decoration: none;
+  cursor: pointer;
+  color: #673AB7;
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: 2px solid;
+  display: block;
+  text-align: center;
+}
+
+.action[href=''] {
+  display: none;
+}
+
+.buttons {
+  flex-wrap: wrap;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.logo {
+  width: 75%;
+  padding-bottom: 15px;
+}
+
+.info {
+  padding: 0 .5em 1em .5em;
+}
